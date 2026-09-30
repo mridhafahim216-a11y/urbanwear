@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:#f7f7f5;color:#151515}
+.container{width:min(1120px,92%);margin:auto}
+.header{position:sticky;top:0;z-index:20;background:rgba(247,247,245,.94);backdrop-filter:blur(12px);border-bottom:1px solid #ddd}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:21px;font-weight:800;letter-spacing:-1px;color:#111;text-decoration:none}
+.logo span{font-weight:400}
+nav{display:flex;gap:28px}
+nav a{color:#333;text-decoration:none;font-size:14px}
+.cart-btn,.filter{border:1px solid #ccc;background:#fff;padding:10px 15px;border-radius:999px;cursor:pointer}
+.cart-btn b{background:#111;color:#fff;border-radius:50%;padding:2px 7px;margin-left:4px}
+.hero{padding:75px 0 90px;background:#e8e5df}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:2px;margin-bottom:14px}
+h1{font-size:clamp(50px,7vw,88px);line-height:.93;letter-spacing:-5px}
+h1 span{font-weight:400}
+.hero-text{max-width:480px;margin:25px 0 30px;color:#555;line-height:1.7}
+.btn{display:inline-block;background:#111;color:#fff;padding:14px 22px;border-radius:4px;text-decoration:none;border:0;cursor:pointer;font-weight:600}
+.hero-card{height:440px;background:linear-gradient(145deg,#252525,#777);display:flex;align-items:end;justify-content:center;overflow:hidden}
+.hero-fashion{font-size:72px;font-weight:800;color:#fff;line-height:.85;padding-bottom:55px;text-align:center;letter-spacing:-4px}
+.hero-fashion small{font-size:12px;letter-spacing:5px}
+.section{padding:90px 0}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:35px}
+h2{font-size:40px;letter-spacing:-2px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filter.active{background:#111;color:#fff;border-color:#111}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.product{background:#fff;border:1px solid #e4e4e4}
+.product-img{height:330px;display:flex;align-items:center;justify-content:center;font-size:50px;font-weight:800;color:#fff}
+.shirt-bg{background:linear-gradient(135deg,#65717d,#c5ccd1)}
+.pant-bg{background:linear-gradient(135deg,#20242a,#626872)}
+.hoodie-bg{background:linear-gradient(135deg,#705f55,#c0a995)}
+.product-info{padding:20px}
+.product-info h3{font-size:17px;margin-bottom:8px}
+.product-info p{color:#777;font-size:13px;margin-bottom:15px}
+.price{font-weight:800;font-size:18px}
+.buy{float:right;padding:9px 13px;font-size:12px}
+.features{background:#111;color:#fff;padding:55px 0}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.feature-grid span{font-size:25px}.feature-grid h3{margin:12px 0 6px}.feature-grid p{color:#aaa;font-size:13px}
+.contact-box{background:#e8e5df;padding:50px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.contact{padding-top:0}
+footer{border-top:1px solid #ddd;padding:35px 0}.footer{display:flex;justify-content:space-between;gap:20px;color:#777;font-size:12px}.footer p{margin-top:8px}
+.cart{position:fixed;right:-420px;top:0;width:min(390px,92vw);height:100vh;background:#fff;z-index:40;padding:25px;transition:.3s;box-shadow:-10px 0 30px #0002}
+.cart.open{right:0}.overlay{display:none;position:fixed;inset:0;background:#0008;z-index:30}.overlay.show{display:block}
+.cart-head{display:flex;justify-content:space-between;margin-bottom:25px}.cart-head button{border:0;background:none;font-size:20px;cursor:pointer}
+.cart-item{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid #eee;font-size:14px}
+.remove{border:0;background:none;color:#999;cursor:pointer}
+.cart-total{display:flex;justify-content:space-between;margin:25px 0;font-size:18px}
+.checkout{width:100%}
+.empty{color:#888;text-align:center;padding:40px 0}
+@media(max-width:750px){
+ nav{display:none}.hero{padding:55px 0}.hero-grid{grid-template-columns:1fr}.hero-card{height:330px}.hero-fashion{font-size:55px}
+ .section{padding:65px 0}.section-head{align-items:start;flex-direction:column}h2{font-size:34px}
+ .products{grid-template-columns:1fr 1fr}.product-img{height:240px}.feature-grid{grid-template-columns:1fr}.contact-box{padding:30px;display:block}.contact-box .btn{margin-top:22px}.footer{display:block}
+}
+@media(max-width:480px){.products{grid-template-columns:1fr}.product-img{height:300px}}
